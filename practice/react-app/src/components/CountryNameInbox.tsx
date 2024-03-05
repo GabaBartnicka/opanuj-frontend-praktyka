@@ -31,7 +31,7 @@ export const CountryNameInbox = () => {
         }}
         placeholder="Type to search..."
         startContent={
-          "test"
+          ""
         }
       />
     </div>

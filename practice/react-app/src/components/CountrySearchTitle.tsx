@@ -5,7 +5,7 @@ export const CountrySearchTitle = () => {
 
   return (
     <div>
-      <h1 className="text-2xl">Wyszukiwarka krajów: {name}</h1>
+      <h1 className="text-2xl">Country search: {name}</h1>
       <div className="pt-8" />
 
     </div>
