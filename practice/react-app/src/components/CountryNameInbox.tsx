@@ -1,6 +1,13 @@
 import { Input } from '@nextui-org/react';
 
-export const CountryNameInbox = () => {
+interface CountryNameInboxProps {
+  name: string,
+  setName: (value: (((prevState: string) => string) | string)) => void
+}
+
+export const CountryNameInbox =
+  ({ name, setName }: CountryNameInboxProps) => {
+    console.log(name);
   return (<>
     <div
       className="w-[340px] h-[240px] px-8 rounded-2xl flex justify-center items-center bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
@@ -30,9 +37,11 @@ export const CountryNameInbox = () => {
           ]
         }}
         placeholder="Type to search..."
-        startContent={
-          ""
-        }
+        // startContent={
+        //   name
+        // }
+        // onChange={(e) => setName(e.target.value)}
+        onValueChange={(value) => setName(value)}
       />
     </div>
   </>);
