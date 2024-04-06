@@ -7,7 +7,8 @@ export interface Country {
   currency: string,
   language: string,
   capital: string,
-  ccn3: string
+  ccn3: string,
+  flag: string,
 
   name: {
     common: string;
